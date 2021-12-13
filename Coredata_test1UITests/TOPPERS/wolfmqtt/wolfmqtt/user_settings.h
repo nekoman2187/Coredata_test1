@@ -1,0 +1,12 @@
+#ifdef WOLFMQTT_USER_SETTINGS
+
+ #define WOLFMQTT_USER_SETTINGS
+ #define ENABLE_MQTT_TLS
+ #define WOLFSSL_BASE64_ENCODE
+ #define TOPPERS
+ #define WOLFMQTT_NO_TIMEOUT
+ 
+#endif
+
+
+
