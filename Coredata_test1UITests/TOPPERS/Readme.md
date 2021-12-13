@@ -1,16 +1,19 @@
-**This demo uses STM's NUCLEO F767ZI board running the TOPPERS OS to communicate with Azure IoT Central via MQTT.
+## This demo uses STM's NUCLEO F767ZI board running the TOPPERS OS to communicate with Azure IoT Central via MQTT.
 
-This demo requires the following projects
+# This demo requires the following projects
 TOPPERS Project:
 https://dev.toppers.jp/trac_user/contrib/browser/azure_iot_hub_f767zi/trunk
 IDE environment:
+
 https://code.visualstudio.com
 Download the compilation environment
+
 MSYS2:
 https://www.msys2.org
 $ pacman ?Syu
 $ pacman ?Syu
 $ pacman -S make
+
 ARM Compiler:
 https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads
 gcc-arm-none-eabi-10-2020-q4-major-win32.exe
@@ -68,6 +71,3 @@ Input the following
 mon>device iot
 
 Communication will be started.
-
-
-Translated with www.DeepL.com/Translator (free version)
