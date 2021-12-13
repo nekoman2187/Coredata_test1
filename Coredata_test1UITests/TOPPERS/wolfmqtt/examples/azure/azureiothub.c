@@ -53,7 +53,6 @@
     #endif
 #endif
 
-
 #ifdef ENABLE_AZUREIOTHUB_EXAMPLE
 
 #include <wolfssl/ssl.h>
