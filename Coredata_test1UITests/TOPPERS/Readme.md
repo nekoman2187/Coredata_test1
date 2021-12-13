@@ -10,19 +10,18 @@ Download the compilation environment
 
 MSYS2:
 https://www.msys2.org
-$ pacman ?Syu
-$ pacman ?Syu
-$ pacman -S make
+ $ pacman ?Syu
+ $ pacman ?Syu
+ $ pacman -S make
 
 ARM Compiler:
 https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads
-
-gcc-arm-none-eabi-10-2020-q4-major-win32.exe
+ gcc-arm-none-eabi-10-2020-q4-major-win32.exe
 
 Select the [Extensions] icon [Ctl+Shift+X] in VSCODE
-C/C++ for Visual Studio Code
-Coretex-Debug
-Installation
+ C/C++ for Visual Studio Code
+  Coretex-Debug
+  Installation
 When you are ready, follow the steps below to create the environment
 1. copy IDE/TOPPERS/wolfmqtt to trunk-473/trunk
 2. VSCODE menu
@@ -30,18 +29,16 @@ When you are ready, follow the steps below to create the environment
 3. Set up trunk-473/trunk/wolfmqtt
 
 Modify the make file
-app_iothub_client/Debug/Mkaefile
-
+ app_iothub_client/Debug/Mkaefile
 Add the include path
-INCLUDES += -I$(SRCDIR)/... /wolfmqtt
+ INCLUDES += -I$(SRCDIR)/... /wolfmqtt
 
 Add library
-$(SRCDIR)/... /wolfmqtt/Debug/libwolfmqtt.a 
+ $(SRCDIR)/... /wolfmqtt/Debug/libwolfmqtt.a 
 
 Change the stack size
-asp_baseplatform/monitor/monitor.h
-#define MONITOR_STACK_SIZE 2046
-2046 to 4096
+ asp_baseplatform/monitor/monitor.h
+#define MONITOR_STACK_SIZE 2046 to 4096
 
 app_iothub_client/src/command.c
 Add
@@ -59,16 +56,16 @@ Writing to the board
 [Terminal]->[Run Task]->[write app]
 
 Terminal settings
-https://ja.osdn.net/projects/ttssh2/
-Install Tera Term
-Serial setting of COM3(If it is not in COM3, please check it in system)
-Setup speed 115200
+ https://ja.osdn.net/projects/ttssh2/
+ Install Tera Term
+ Serial setting of COM3(If it is not in COM3, please check it in system)
+ Setup speed 115200
 
 
 Wait for a while to get the time from NTP
-Sun Dec 12 14:52:18 2021
+ Sun Dec 12 14:52:18 2021
 
 Input the following
-mon>device iot
+ mon>device iot
 
 Communication will be started.
