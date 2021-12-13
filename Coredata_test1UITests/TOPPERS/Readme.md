@@ -1,6 +1,6 @@
-## This demo uses STM's NUCLEO F767ZI board running the TOPPERS OS to communicate with Azure IoT Central via MQTT.
+# This demo uses STM's NUCLEO F767ZI board running the TOPPERS OS to communicate with Azure IoT Central via MQTT.
 
-# This demo requires the following projects
+## This demo requires the following projects
 TOPPERS Project:
 https://dev.toppers.jp/trac_user/contrib/browser/azure_iot_hub_f767zi/trunk
 IDE environment:
@@ -16,17 +16,18 @@ $ pacman -S make
 
 ARM Compiler:
 https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads
+
 gcc-arm-none-eabi-10-2020-q4-major-win32.exe
 
 Select the [Extensions] icon [Ctl+Shift+X] in VSCODE
--C/C++ for Visual Studio Code
--Coretex-Debug
+C/C++ for Visual Studio Code
+Coretex-Debug
 Installation
 When you are ready, follow the steps below to create the environment
 1. copy IDE/TOPPERS/wolfmqtt to trunk-473/trunk
-2.VSCODE menu
-[File]->[Add Folder to WorkSpace...].
-Set up trunk-473/trunk/wolfmqtt
+2. VSCODE menu
+  [File]->[Add Folder to WorkSpace...]
+3. Set up trunk-473/trunk/wolfmqtt
 
 Modify the make file
 app_iothub_client/Debug/Mkaefile
